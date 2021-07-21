@@ -202,9 +202,9 @@ def densepose_dir(dir_inpath, dir_outpath='/content/output'):
   for file in np.sort(os.listdir(dir_inpath)):
     ext = file.split('.')[-1]
     origin_path = os.path.join(dir_inpath,file)
-    if ext in img_ext_list: 
+    if ext.lower() in img_ext_list: 
       densepose_img(origin_path, dir_outpath)
-    elif ext in vid_ext_list: 
+    elif ext.lower() in vid_ext_list: 
       densepose_vid(origin_path, dir_outpath)
     else:
       print('The file '+file+' is not an images or video')
