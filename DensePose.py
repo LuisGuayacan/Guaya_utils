@@ -207,7 +207,7 @@ def densepose_dir(dir_inpath, dir_outpath='/content/output'):
     elif ext.lower() in vid_ext_list: 
       densepose_vid(origin_path, dir_outpath)
     else:
-      print('The file '+file+' is not an images or video')
+      print('The file '+file+' is not an image or video')
 
 
 def densepose_compute(origin_path, output_path='/content/output'):
